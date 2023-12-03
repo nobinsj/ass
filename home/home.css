@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    /* display: none; */
+    color: #4CC9F0;
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1em;
+    padding-left: 2em;
+}
+
+.title p {
+    font-size: smaller;
+}
+
+.title h2 {
+    font-size: 2.5em;
+    font-family: 'Lora', serif;
+}
+
+.title h2 span {
+    font-weight: 400;
+    font-family: 'Black Ops One';
+
+
+}
+
+.title h3 {
+    font-size: x-large;
+    font-family: 'Lora', serif;
+}
+
+header {
+    /* position: relative; */
+    width: 65vw;
+    margin-top: 18vh;
+    height: 70vh;
+    /* background-color: #B5179E; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 2vw; */
+
+    border-radius: 18px;
+    box-shadow: 1px 1px 2px 2px #F72585;
+}
+
+
+
+header img {
+    max-width: 80%;
+    height: auto;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 4em;
+    align-self: flex-end;
+
+}
+
+.name {
+    color: #F72585;
+}
+
+@media only screen and (max-width:600px){
+    header{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0;
+    }
+    .title {
+        padding: 1.5em;
+
+    }
+
+    header img{
+        width: 55vw;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+    .title p{
+        font-size: xx-small;
+    }
+
+    .title h2 {
+        font-size: 1.5em;
+        font-family: 'Lora', serif;
+    }
+
+    .title h2 span {
+        font-weight: 800;
+        font-family: 'Black Ops One';
+
+
+    }
+
+    .title h3 {
+        font-size: 1em;
+        font-family: 'Lora', serif;
+    }
+}
+
+
+@media only screen and (max-width:1100px) {
+    header {
+        width: 95vw;
+        height: 58vh;
+
+    }
+
+ 
+}

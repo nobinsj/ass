@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="validation/validation.css">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <h1>My Folio</h1>
+        <div class="user" id="user" onclick="LogOut()">
+        </div>
+    </div>
+
+    <!-- login failed  -->
+    <div id="errorContainer" class="error-container">
+        <div class="error-message" id="errorMessages"></div>
+        <button onclick="closeErrorContainer()">Close</button>
+    </div>
+
+
+    <!-- Welcome Page -->
+    <div class="container" id="container">
+
+        <!-- left image wallpaper -->
+        <div class="wallpaper">
+            <img src="images/wallpaper.png" alt="wallpaper-image">
+        </div>
+
+        <!-- Right Login Section -->
+
+        <div class="login-container">
+            <div>
+                <h1>Welcome Back!</h1>
+                <p class="login-paragraph">Please enter your login details to sign in</p>
+            </div>
+
+            <!-- Input section -->
+            <div class="login-section">
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required>
+                    <span>Email Address</span>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" required>
+                    <span>Password</span>
+                    <div class="show-hide">
+                        <img src="images/eye-open.svg" alt="" class="showhide" id="showhide">
+
+                    </div>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="remember" id="remember"> Keep me logged in</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <!-- <button onclick="validateLogin()">Log in</button> -->
+                <button onclick="LoggedIn()">Log in</button>
+
+                <div class="signup-link">
+                    <p>Don't have an account?</p>
+                    <a href="signup/signup.html">Sign up</a>
+                </div>
+            </div>
+
+            <div class="continue-with">
+                <p>or continue with</p>
+            </div>
+
+            <!-- Other login icons -->
+            <div class="continue-with-icons">
+                <img src="images/google.png" alt="">
+                <img src="images/Facebook.png" alt="">
+                <img src="images/apple.png" alt="">
+                <img src="images/twitter.png" alt="">
+            </div>
+        </div>
+        <!-- //End of Login section -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="social-icons">
+            <img src="/images/Facebook.png" alt="facebook">
+            <img src="/images/instagram.png" alt="instagram">
+            <img src="/images/twitter.png" alt="twitter">
+        </div>
+        <div class="copyright">
+            &copy; copyright 2023
+        </div>
+    </footer>
+
+    <script src="validation/validateLogin.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+main {
+    margin-top: 14vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10vw;
+    color: #4CC9F0;
+
+    margin-bottom: 12vh;
+}
+
+
+main h2 {
+    text-transform: uppercase;
+    font-family: 'Black Ops One';
+    padding-bottom: 0.5em;
+    border-bottom: 2px dashed #4361EE;
+    color: #4895EF;
+}
+
+.contact-info,
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2em;
+    padding: 1.5em;
+}
+
+.contact-info h2 {
+    /* color: #F72585; */
+    width: 8em;
+    /* border-bottom: 2px dashed #B5179E; */
+
+}
+
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 2em;
+    justify-items: start;
+    align-items: center;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-size: small;
+}
+
+.contact {
+    border-radius: 8px;
+    box-shadow: 0 0 4px #4361EE;
+    /* background-color: #ffff; */
+}
+
+.input-group input,
+textarea {
+    width: 32em;
+    line-height: 2.5em;
+    padding: 0 1em;
+    outline: none;
+    padding: 0 12px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #4361EE;
+    resize: none;
+    color: #4CC9F0;
+}
+
+.input-group input:focus,
+textarea:focus {
+    border: 2px solid #4895EF;
+}
+
+.contact-us button {
+    align-self: flex-start;
+    width: 6em;
+    /* font-size: medium; */
+    padding: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4CC9F0;
+    background-color: transparent;
+    border: 1px solid #4361EE;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.contact-us button:hover {
+    cursor: pointer;
+    border: 1px solid #4CC9F0;
+    /* background-color: #4CC9F0; */
+    color: #4CC9F0;
+}
+
+
+
+@media only screen and (max-width:540px) {
+    main{
+        flex-wrap: wrap-reverse;
+    }
+    .contact {
+        width: 90%;
+    }
+
+    .input-group input,
+    textarea {
+        width: auto;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact-us {
+        margin-top: 1em;
+    }
+
+
+}

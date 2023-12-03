@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+/* main-container */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+/* login-right-side */
+.login-container {
+    width: 25em;
+    /* height: 82vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow:  0px 0px 2px #4361EE;
+    color: #4361EE;
+
+}
+
+.login-container h1 {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    color: rgb(248, 10, 133);
+}
+
+.login-paragraph {
+    color: rgb(92, 92, 92);
+    font-size: medium;
+    font-weight: 100;
+}
+
+.login-section {
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.5em;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    position: relative;
+    width: 100%;
+    height: 2.8em;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #4362ee7e;
+    z-index: 1111;
+}
+
+.input-box span {
+    position: absolute;
+    top: 0.6em;
+    left: 1.5em;
+    color: rgb(73, 73, 73);
+    transition: 0.3s ease;
+    color: #4361EE;
+    background-color: white;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border: 2px solid #3A0CA3;
+}
+
+.input-box input:focus~span,
+.input-box input:valid~span {
+    padding: 0 5px;
+    transform: translate(-1em, -1.2em) scale(0.8);
+    z-index: 1111;
+    color: #3A0CA3;
+}
+
+.show-hide {
+ position: absolute;
+ top: 0.5em;
+ right: 2.5em;
+}
+
+
+.show-hide img {
+    width: 1.3em;
+    cursor: pointer;
+}
+
+.showhide {
+    position: absolute;
+    z-index: 1111;
+}
+
+
+.remember-forgot {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding-bottom: 1em;
+
+}
+
+.remember-forgot label{
+    font-size: small;
+}
+
+.remember-forgot input,
+label,
+a {
+    cursor: default;
+    /* pointer-events: none; */
+    text-decoration: none;
+    user-select: none;
+}
+
+.login-container button {
+    height: 2em;
+    border: none;
+    border-radius: 8px;
+    color: #4361EE;
+    background-color: #ffffff;
+    border: 1px solid #4361EE;
+    font-size: large;
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.login-container button:hover {
+    cursor: pointer;
+    background-color: #3F37C9;
+    color: #ffffff;
+    /* font-size: larger; */
+}
+
+
+.signup-link p {
+    display: inline;
+}
+
+.signup-link a {
+    cursor: pointer;
+}
+
+.continue-with {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    /* justify-items: center; */
+    align-items: center;
+    /* column-gap: 0.5em; */
+}
+
+.continue-with::before,
+.continue-with::after {
+    content: "";
+    height: 1px;
+    background-color: #4895EF;
+    display: block;
+}
+
+.continue-with-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.continue-with-icons img {
+
+    width: 3em;
+    /* border: 1px solid; */
+    padding: 0.5em;
+    box-shadow: 1px 1px 3px #4CC9F0;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:1300px) {
+    .wallpaper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .continue-with::after,
+    .continue-with::before {
+
+        display: none;
+    }
+
+    .continue-with {
+        display: inline;
+    }
+
+    .login-container h1{
+        font-size: 2em;
+    }
+    .login-paragraph{
+        font-size: small;
+    }
+    .input-box input{
+        height: 2.5em;
+    }
+    .remember-forgot label{
+        font-size:12px;
+    }
+    .login-container button{
+        /* height: 1.5em; */
+        font-size: medium;
+    }
+    .signup-link{
+        font-size: small;
+    }
+
+}

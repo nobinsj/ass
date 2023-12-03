@@ -1,0 +1,19 @@
+/* footer */
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #3A0CA3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-icons img{
+    width: 2.5em;
+    padding: 0.5em;
+}
+.copyright{
+    color: white;
+}
+

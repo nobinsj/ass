@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_4</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/validation/validation.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <h1>My Folio</h1>
+        <div class="user" id="user" onclick="LogOut()">
+        </div>
+    </div>
+
+
+    <!-- Create account failed -->
+    <div id="errorContainer" class="error-container">
+        <div class="error-message" id="errorMessages"></div>
+        <button onclick="closeErrorContainer()">Close</button>
+      </div>
+
+    <!-- Welcome Page -->
+    <div class="container" id="container">
+
+        <!-- left image wallpaper -->
+        <div class="wallpaper">
+            <img src="https://lookspanish.com/wp-content/uploads/2021/12/6308-768x480.jpg" alt="wallpaper-image">
+        </div>
+
+        <!-- Right Login Section -->
+        <div class="login-container">
+            <div>
+                <h1>Sign Up</h1>
+                <p class="login-paragraph">Create your account in seconds</p>
+            </div>
+
+            <!-- Input section -->
+            <div class="login-section">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required>
+                    <span>Full Name</span>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required>
+                    <span>Email Address</span>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" required>
+                    <span>Password</span>
+                    <div class="show-hide">
+                        <img src="/images/eye-open.svg" alt="" class="showhide" id="showhide">
+
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="confirm-password" id="repassword" required>
+                    <span> Confirm Password</span>
+                    <div class="show-hide">
+                        <img src="/images/eye-open.svg" alt="" class="showhide" id="reshowhide">
+
+                    </div>
+                </div>
+
+                <div class="remember-forgot">
+
+                    <input type="checkbox" name="remember" id="remember"> <label> I agree to the Terms of Services and
+                        Privacy Policy</label>
+                </div>
+
+                <button onclick="validateForm()">Create an account</button>
+
+                <div class="signup-link">
+                    <p>Already a member</p>
+                    <a href="/">Log in</a>
+                </div>
+            </div>
+
+            <div class="continue-with">
+                <p>or continue with</p>
+            </div>
+
+            <!-- Other login icons -->
+            <div class="continue-with-icons">
+                <img src="/images/google.png" alt="">
+                <img src="/images/Facebook.png" alt="">
+                <img src="/images/apple.png" alt="">
+                <img src="/images/twitter.png" alt="">
+            </div>
+        </div>
+        <!-- //End of Login section -->
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="social-icons">
+            <img src="/images/Facebook.png" alt="facebook">
+            <img src="/images/instagram.png" alt="instagram">
+            <img src="/images/twitter.png" alt="twitter">
+        </div>
+        <div class="copyright">
+            &copy; copyright 2023
+        </div>
+    </footer>
+
+
+    <script src="signup.js"></script>
+    <script src="/validation/validation.js"></script>
+</body>
+
+</html>
